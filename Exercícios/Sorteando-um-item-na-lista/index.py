@@ -1,9 +1,12 @@
-import random
-n1 = str(input("Primeiro aluno:"))
-n2 = str(input("Primeiro aluno:"))
-n3 = str(input("Primeiro aluno:"))
-n4 = str(input("Primeiro aluno:"))
+from random import choice
 
-lista = [n1, n2, n3, n4]
-escolhido = random.choice(lista)
-print(f"O aluno escolhido foi: {escolhido}")
+aluno1 = input("Digite o nome do primeiro aluno:")
+aluno2 = input("Digite o nome do segundo aluno:")
+aluno3 = input("Digite o nome do terceiro aluno:")
+aluno4 = input("Digite o nome do quarto aluno:")
+
+alunos = [aluno1, aluno2, aluno3, aluno4]
+
+escolhido = choice(alunos)
+
+print(f"O aluno escolhido para apagar o quadro foi: {escolhido}")

@@ -1,15 +1,18 @@
 
-nome_completo = input("Digite seu nome:")
+#– Quantas letras ao todo (sem considerar espaços).
+#– Quantas letras tem o primeiro nome.
 
-nome_maiusculo = nome_completo.upper()
+nome = input("Digite o seu nome completo:")
 
-nome_minuscula = nome_completo.lower()
+nome_maiusculo = nome.upper()
+nome_minusculo = nome.lower()
+quantidade_letra = len(nome.replace(" " , ""))
+primeiro_nome = nome.split()[0]
+letras_primeironome = len(primeiro_nome) 
 
-quantidade_letras = len(nome_completo.replace(" " , ""))
+print(f"O nome em maiúsculo fica: {nome_maiusculo}")
+print(f"O nome em minúsculo fica: {nome_minusculo}")
+print(f"A quantidade de letras no seu nome é: {quantidade_letra}")
+print(f"A quantidade de letras do primeiro nome é: {letras_primeironome}")
 
-primeiro_nome = nome_completo.split()[0]
 
-print(f"Nome maiúsculas: {nome_maiusculo}")
-print(f"Nome minúsculas:{nome_minuscula}")
-print(f"Quantidade de letras:{quantidade_letras}")
-print(f"Quantidade de letras no primeiro nome:{primeiro_nome}")

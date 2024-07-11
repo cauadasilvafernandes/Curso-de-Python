@@ -1,7 +1,3 @@
-nome = input("Digite o seu nome:")
+nome = (input("Qual o seu nome?")).strip()
 
-silva = "SILVA" in nome.upper()
-if silva:
-    print("Seu nome tem 'Silva'.")
-else:
-    print("Seu nome não tem 'Silva'.")
+print(f"Seu nome tem silva? {'silva' in nome.lower()}")
